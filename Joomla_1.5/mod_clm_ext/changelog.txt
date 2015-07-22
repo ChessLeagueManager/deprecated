@@ -1,0 +1,24 @@
+﻿CHANGELOG mod_clm_ext ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.0.3 - [xx-xx-2012] - - - - - - - - - - - - - - - - - - - -
+# Quelltextbereinigung
+
+- - - - - 1.0.2 - [06-11-2012] - - - - - - - - - - - - - - - - - - - -
++ Hervorheben von Mannschaften/Vereinen
+
+- - - - - 1.0.1 - [18-10-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau dieser changelog
+^ Anpassung wegen Suchmaschinenfreundliche URLs JA auf gerufener Seite
+^ method="upgrade" gesetzt
+

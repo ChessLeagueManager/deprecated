@@ -1,0 +1,16 @@
+﻿CHANGELOG mod_clm_log ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.1.0 - [xx-xx-2012] - - - - - - - - - - - - - - - - - - - -
++ Erg.Meldung auch durch Spieler des 2.Vereins bei SG möglich
+

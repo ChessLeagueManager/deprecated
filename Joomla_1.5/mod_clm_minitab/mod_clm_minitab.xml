@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>CLM MiniTable Modul</name>
+	<author>Fjodor Schafer</author>
+	<creationDate>Oktober 2012</creationDate>
+	<copyright>(C) 2011 vonfio.de All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>ich@vonfio.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>1.0.2</version>
+	<description>
+		<![CDATA[
+			 <h3>Chess League Manager : MiniTable Modul</h3>
+			 <p>Modul zur Darstellung von Ligatabellen für den öffentlichen Bereich.</p>
+			 <p><a target="_blank" href="http://www.chessleaguemanager.de">CLM Projekt Homepage</a></p>
+			 <p>&copy; Fjodor Schäfer [<a target="_blank" href="http://www.vonfio.de">www.vonfio.de</a>]</p>
+			 ]]>
+		 </description>
+
+	<files>
+		<filename module="mod_clm_minitab">mod_clm_minitab.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.txt</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/minitab_css.css</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="liga" type="sql" default="1" label="Liga auswählen" query="
+		SELECT a.id AS value, concat(  s.name, ' -- ', a.name ) AS name 
+		FROM #__clm_liga AS a LEFT JOIN #__clm_saison as s ON s.id = a.sid " value_field="name" />
+		
+		<param name="spacer" type="spacer" />
+		
+		<param name="altItemid" type="text" default="" label="Alternative Itemid" />
+		
+		<param name="spacer" type="spacer" />
+		
+		<param name="show_zps" type="radio" default="1" label="Mannschaften hervorheben">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="zps" type="sql" default="1" label="Verein" query="SELECT zps AS value, name FROM #__clm_vereine ORDER BY name ASC" value_field="name" />
+		<param name="bold" type="text" default="font-weight: bold; background-color:#EEE;" label="CSS Style" size="50" />
+		<param name="spacer" type="spacer" />
+		
+		<param name="show_th" type="radio" default="1" label="Überschrift anzeigen">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="show_aufab" type="radio" default="0" label="Auf- und Absteiger anzeigen">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="show_mp" type="radio" default="1" label="MP anzeigen">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="show_bp" type="radio" default="1" label="BP anzeigen">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</install>

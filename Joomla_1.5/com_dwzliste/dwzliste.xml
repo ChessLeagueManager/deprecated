@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+	<install method="upgrade" type="component" version="1.5.0">
+	<name>dwzliste</name>
+	<author>Helge Frowein</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>(C) Copyright 2010-2011 by Helge Frowein</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>helge-frowein@online.de</authorEmail>
+	<version>1.0.0</version>
+	<description>Anzeige der DWZ-Liste eines Vereins</description>
+
+	<files folder="site">
+		
+		<filename>autoload.inc.php</filename>
+		<filename>controller.php</filename>
+		<filename>dwzliste.php</filename>
+		<filename>index.html</filename>
+		
+		<filename>classes/index.html</filename>
+		<filename>classes/DWZText.class.php</filename>
+		
+		<filename>css/index.html</filename>
+		<filename>css/style.css</filename>
+		
+		<filename>models/index.html</filename>
+		<filename>models/liste.php</filename>
+		<filename>models/spieler.php</filename>
+		<filename>models/stats.php</filename>
+
+		<filename>views/index.html</filename>
+		<filename>views/liste/index.html</filename>
+		<filename>views/liste/view.html.php</filename>
+		<filename>views/liste/tmpl/default.php</filename>
+		<filename>views/liste/tmpl/index.html</filename>
+		<filename>views/spieler/index.html</filename>
+		<filename>views/spieler/view.html.php</filename>
+		<filename>views/spieler/tmpl/default.php</filename>
+		<filename>views/spieler/tmpl/index.html</filename>
+		<filename>views/stats/index.html</filename>
+		<filename>views/stats/view.html.php</filename>
+		<filename>views/stats/tmpl/default.php</filename>
+		<filename>views/stats/tmpl/index.html</filename>
+
+	</files>
+
+	<languages folder="languages">
+		<language tag="de-DE">de-DE.com_dwzliste.ini</language>
+	</languages>
+	
+	<administration>
+		<menu>DWZ-Liste</menu>
+	
+		<files folder="admin">
+			
+			<filename>admin.dwzliste.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+	
+			<filename>views/index.html</filename>
+			<filename>views/dwzliste/index.html</filename>
+			<filename>views/dwzliste/view.html.php</filename>
+			<filename>views/dwzliste/tmpl/default.php</filename>
+			<filename>views/dwzliste/tmpl/index.html</filename>
+		</files>
+	
+		<languages folder="adminlang">
+			<language tag="de-DE">de-DE.com_dwzliste.ini</language>
+		</languages>
+		
+	</administration>
+	
+</install>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>CLM Extern Modul</name>
+	<author>CLM Projekt</author>
+	<creationDate>06.11.2012</creationDate>
+	<copyright>(C) Copyright 2008 - 2012 by CLM Project</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>fishpoke@fishpoke.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>1.0.2</version>
+	<description>
+		<![CDATA[
+			 <h3>Chess League Manager : Externes Darstellungsmodul</h3>
+			 <p>Das Modul stellt CLM Daten von einer fernen CLM Installation zur Verfügung.</p>
+			 <p><a target="_blank" href="http://www.fishpoke.de">CLM Projekt Homepage</a></p>
+			 <p>&copy; Thomas Schwietert [<a target="_blank" href="http://www.sboo.de">www.sboo.de</a>]</p>
+			 ]]>
+		 </description>
+
+	<files>
+		<filename module="mod_clm_ext">mod_clm_ext.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.txt</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/idna_convert.class.php</filename>
+		<filename>tmpl/npdata.ser</filename>
+
+	</files>
+<params>
+
+  <param name="URL" type="text" default="www.sboo.de" label="URL wählen" description="Wählen Sie die URL von der die Daten eingelesen werden sollen. ( Beispiel : www.sboo.de ) " />
+
+ <param name="sid" type="text" default="1" label="Saison wählen" description="Wählen Sie die darzustellende Saison" />
+
+ <param name="auto" type="radio" default="0" label="Automatische Auswahl" description="Wählen Sie ob versucht werden soll mit der automatischen Schnittstelle des entfernten Servers Kontakt aufzunehmen. In diesem Fall würde die Wahl der Ligen sowie ihrer Namen entfallen ! (Achtung : Wenn der Admin dies deaktiviert werden KEINE Ligen mehr angezeigt !)">
+	 <option value="0">NO</option>
+	 <option value="1">YES</option>
+  </param>
+ 
+ <param name="lid" type="text" default="1;2;3" label="Liga wählen" description="Wählen Sie bis zu 10 darzustellende Ligen, getrennt durch Semikoli. (Beispiel : 1;2;5;8)" />
+
+ <param name="marke" type="radio" default="0" label="Hervorheben" description="Sollen Mannschaften mit den untenstehenden Schlüsselwort im Namen hervorgehoben werden?">
+	 <option value="0">NO</option>
+	 <option value="1">YES</option>
+  </param>
+ <param name="keyword" type="text" default="" label="Schlüsselwort" description="Wählen Sie ein Schlüsselwort(z.B. Ortsname), das in allen Mannschaftsnamen des hervorzuhebenden Vereins vorkommt." />
+ <param name="mcolor" type="list" default="0" label="Hintergrundfarbe" description="Wählen Sie die Markierungsfarbe!">
+	 <option value="0">keine</option>
+	 <option value="lawngreen">Grün</option>
+	 <option value="yellow">Gelb</option>
+	 <option value="red">Rot</option>
+	 <option value="skyblue">Blau</option>
+	 <option value="magenta">Magenta</option>
+	 <option value="grey">Grau</option>
+  </param>
+	
+ <param name="lid_1" type="text" default="Liga 1" label="Name Liga 1 wählen" description="Wählen Sie den Namen der ersten Liga" />
+ <param name="lid_r1" type="text" default="8" label="Anzahl Runden Liga 1 wählen" description="Wählen Sie die Anzahl der Runden der ersten Liga" />
+ <param name="lid_d1" type="text" default="1" label="Anzahl Durchgänge Liga 1 wählen" description="Wählen Sie die Anzahl der Durchgänge der ersten Liga (max.2!)" />
+
+ <param name="lid_2" type="text" default="Liga 2" label="Name Liga 2 wählen" description="Wählen Sie den Namen der zweiten Liga" />
+ <param name="lid_r2" type="text" default="8" label="Anzahl Runden Liga 2 wählen" description="Wählen Sie die Anzahl der Runden der zweiten Liga" />
+ <param name="lid_d2" type="text" default="1" label="Anzahl Durchgänge Liga 2 wählen" description="Wählen Sie die Anzahl der Durchgänge der zweiten Liga (max.2!)" />
+
+ <param name="lid_3" type="text" default="Liga 3" label="Name Liga 3 wählen" description="Wählen Sie den Namen der dritten Liga" />
+ <param name="lid_r3" type="text" default="8" label="Anzahl Runden Liga 3 wählen" description="Wählen Sie die Anzahl der Runden der dritten Liga" />
+ <param name="lid_d3" type="text" default="1" label="Anzahl Durchgänge Liga 3 wählen" description="Wählen Sie die Anzahl der Durchgänge der dritten Liga (max.2!)" />
+
+ <param name="lid_4" type="text" default="Liga 4" label="Name Liga 4 wählen" description="Wählen Sie den Namen der vierten Liga" />
+ <param name="lid_r4" type="text" default="8" label="Anzahl Runden Liga 4 wählen" description="Wählen Sie die Anzahl der Runden der vierten Liga" />
+ <param name="lid_d4" type="text" default="1" label="Anzahl Durchgänge Liga 4 wählen" description="Wählen Sie die Anzahl der Durchgänge der vierten Liga (max.2!)" />
+
+ <param name="lid_5" type="text" default="Liga 5" label="Name Liga 5 wählen" description="Wählen Sie den Namen der fünften Liga" />
+ <param name="lid_r5" type="text" default="8" label="Anzahl Runden Liga 5 wählen" description="Wählen Sie die Anzahl der Runden der fünften Liga" />
+ <param name="lid_d5" type="text" default="1" label="Anzahl Durchgänge Liga 5 wählen" description="Wählen Sie die Anzahl der Durchgänge der fünften Liga (max.2!)" />
+
+ <param name="lid_6" type="text" default="Liga 6" label="Name Liga 6 wählen" description="Wählen Sie den Namen der sechsten Liga" />
+ <param name="lid_r6" type="text" default="8" label="Anzahl Runden Liga 6 wählen" description="Wählen Sie die Anzahl der Runden der sechsten Liga" />
+ <param name="lid_d6" type="text" default="1" label="Anzahl Durchgänge Liga 6 wählen" description="Wählen Sie die Anzahl der Durchgänge der sechsten Liga (max.2!)" />
+
+ <param name="lid_7" type="text" default="Liga 7" label="Name Liga 7 wählen" description="Wählen Sie den Namen der siebten Liga" />
+ <param name="lid_r7" type="text" default="8" label="Anzahl Runden Liga 7 wählen" description="Wählen Sie die Anzahl der Runden der siebten Liga" />
+ <param name="lid_d7" type="text" default="1" label="Anzahl Durchgänge Liga 7 wählen" description="Wählen Sie die Anzahl der Durchgänge der siebten Liga (max.2!)" />
+
+ <param name="lid_8" type="text" default="Liga 8" label="Name Liga 8 wählen" description="Wählen Sie den Namen der achten Liga" />
+ <param name="lid_r8" type="text" default="8" label="Anzahl Runden Liga 8 wählen" description="Wählen Sie die Anzahl der Runden der achten Liga" />
+ <param name="lid_d8" type="text" default="1" label="Anzahl Durchgänge Liga 8 wählen" description="Wählen Sie die Anzahl der Durchgänge der achten Liga (max.2!)" />
+
+ <param name="lid_9" type="text" default="Liga 9" label="Name Liga 9 wählen" description="Wählen Sie den Namen der neunten Liga" />
+ <param name="lid_r9" type="text" default="8" label="Anzahl Runden Liga 9 wählen" description="Wählen Sie die Anzahl der Runden der neunten Liga" />
+ <param name="lid_d9" type="text" default="1" label="Anzahl Durchgänge Liga 9 wählen" description="Wählen Sie die Anzahl der Durchgänge der neunten Liga (max.2!)" />
+
+ <param name="lid_10" type="text" default="Liga 10" label="Name Liga 10 wählen" description="Wählen Sie den Namen der zehnten Liga" />
+ <param name="lid_r10" type="text" default="8" label="Anzahl Runden Liga 10 wählen" description="Wählen Sie die Anzahl der Runden der zehnten Liga" />
+ <param name="lid_d10" type="text" default="1" label="Anzahl Durchgänge Liga 10 wählen" description="Wählen Sie die Anzahl der Durchgänge der zehnten Liga (max.2!)" />
+
+</params></install>

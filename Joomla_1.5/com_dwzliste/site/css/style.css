@@ -1,0 +1,27 @@
+/**
+  * CSS Style for DWZ Anzeigen Komponente
+  * Author: Fjodor Schaefer
+  * www.vonfio.de
+*/
+
+	#dwz_liste th {background-color: #aaa; color:#FFFFFF; border: none; } 
+	
+	#dwz_liste .zeile1 { background-color: #FFFFFF;}  /** #FFFFFF **/
+	#dwz_liste .zeile2 { background-color: #EEEEEE;}  /** #EEEEEE **/
+
+	#dwz_liste tr.zeile1:hover td,
+	#dwz_liste tr.zeile2:hover td {background-color: #FFFFCC;}
+
+	/** Raender **/
+	#dwz_liste table th { border: 1px solid #CCC; padding: 0.5em;}
+	#dwz_liste table td { border: 1px solid #CCC; padding: 0.3em;}
+	
+	/** ohne Raender **/
+	#dwz_liste .normal table th, #dwz_liste .normal  table td  { border: none; padding: 0.1em; background: none; color:#000000;}
+	
+	/*************************************/
+	/** Darstellung bei der DWZ Ansicht **/
+	/*************************************/
+	
+	#dwzansicht table, #spieler table { border-collapse:collapse; width: 100%; margin: 10px 0 10px 0; }
+	#cop, #cop a { color:#999999 !important; font-size:11px; }

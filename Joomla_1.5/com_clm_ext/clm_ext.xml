@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>clm_ext</name>
+	<creationDate>06.11.2012</creationDate>
+	<author>CLM Projekt</author>
+	<copyright>(C) Copyright 2009-2012 by CLM Project</copyright>
+	<license>GPL</license>
+	<authorEmail>fishpoke@fishpoke.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>1.0.2</version>
+	<description>
+		<![CDATA[
+		 <h3>CLM Extern Komponente :</h3>
+		 <p>Die Komponente erlaubt die Darstellung von Daten aus dem Ligamanager CLM auf einer Seite ohne CLM !</p>
+		 <p><a target="_blank" href="http://www.chessleaguemanager.de">Projekt Homepage</a></p>
+		 <p>&copy; Thomas Schwietert [<a target="_blank" href="http://www.sboo.de">www.sboo.de</a>]</p>
+			 ]]>
+	</description>
+	
+	<files folder="site">
+		<filename>clm_ext.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>clm_content.css</filename>
+		
+		<filename>models/clm_ext.php</filename>
+		<filename>models/index.html</filename>
+
+		<filename>views/clm_ext/view.html.php</filename>
+		<filename>views/clm_ext/index.html</filename>
+		<filename>views/clm_ext/tmpl/default.php</filename>
+		<filename>views/clm_ext/tmpl/index.html</filename>
+		<filename>views/clm_ext/tmpl/idna_convert.class.php</filename>
+		<filename>views/clm_ext/tmpl/npdata.ser</filename>
+
+		<filename>views/index.html</filename>
+		
+		<filename>images/index.html</filename>
+		<filename>images/accept.png</filename>
+		<filename>images/cancel_f2.png</filename>
+		<filename>images/CLM_Logo.png</filename>
+		<filename>images/con_info.png</filename>
+		<filename>images/edit_f2.png</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/lupe.png</filename>
+		<filename>images/pdf_button.png</filename>
+
+	</files>
+
+	<administration>
+		<menu>CLM Extern</menu>
+	
+	<files folder="admin">
+		<filename>admin.clm_ext.php</filename>
+		<filename>index.html</filename>
+		<filename>changelog.txt</filename>
+
+		<filename>controllers/info.php</filename>
+		<filename>controllers/index.html</filename>
+
+		<filename>views/info.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+	</administration>
+	<params />
+</install>

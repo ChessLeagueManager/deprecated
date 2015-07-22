@@ -1,0 +1,19 @@
+﻿CHANGELOG mod_clm ab 1.1.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.1.2 - [xx-xx-2012] - - - - - - - - - - - - - - - - - - - -
++ Anpassung KO-Turniere mit kleinen Finale
+
+- - - - - 1.1.1 - [xx-xx-2012] - - - - - - - - - - - - - - - - - - - -
+^ Verwendung von Rundennamen
+

@@ -1,0 +1,18 @@
+﻿CHANGELOG com_clm_dwz ab 1.0.0
+------------------------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.0.0 - [22-11-2012] - - - - - - - - - - - - - - - - - - - -
++ Obere Auswahlfelder in Umsetzung einbezogen
+# Prüfung Externe URL
++ Initiales Release
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>clm_dwz</name>
+	<creationDate>24.01.2015</creationDate>
+	<author>CLM Projekt</author>
+	<copyright>(C) Copyright 2012-2015 by CLM Project</copyright>
+	<license>GPL</license>
+	<authorEmail>dc6iq@gmx.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>1.1.1</version>
+	<description>
+		<![CDATA[
+		 <h3>CLM DWZ Komponente :</h3>
+		 <p>Die Komponente erlaubt die Darstellung von DWZ-Zahlen eines Vereins !</p>
+		 <p><a target="_blank" href="http://www.chessleaguemanager.de">Projekt Homepage</a></p>
+		 <p>&copy; Fred Baumgarten [<a target="_blank" href="http://sv-hennef.de">sv-hennef.de</a>]</p>
+			 ]]>
+	</description>
+	
+	<files folder="site">
+		<filename>clm_dwz.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>clm_dwz.css</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<administration>
+		<menu>CLM DWZ</menu>
+		<files folder="admin">
+			<filename>clm_dwz.php</filename>
+			<filename>index.html</filename>
+			<filename>changelog.txt</filename>
+			<folder>controllers</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+</extension>

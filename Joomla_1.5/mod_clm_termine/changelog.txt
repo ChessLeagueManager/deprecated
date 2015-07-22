@@ -1,0 +1,23 @@
+﻿CHANGELOG mod_clm_termine ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.1.2 - [xx-xx-2012] - - - - - - - - - - - - - - - - - - - -
+# Entfernen der Saisonangaben bei Event (Fred) 
+
+- - - - - 1.1.1 - [30-08-2012] - - - - - - - - - - - - - - - - - - - -
+# Verlinkung von Ligen mit 2 Durchgängen
+
+- - - - - 1.1.0 - [28-05-2012] - - - - - - - - - - - - - - - - - - - -
++ Darstellung mehrtägiger Termine und mehrere Termine am Tag
++ Navigation in die Vergangenheit
+

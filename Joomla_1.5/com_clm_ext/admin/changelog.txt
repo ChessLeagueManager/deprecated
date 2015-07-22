@@ -1,0 +1,22 @@
+﻿CHANGELOG com_clm_ext ab 1.0.0 Joomla 1.5
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.0.2 - [06-11-2012] - - - - - - - - - - - - - - - - - - - -
++ Obere Auswahlfelder in Umsetzung einbezogen
+# Prüfung Externe URL
++ Hervorheben von Mannschaften/Vereinen
+
+- - - - - 1.0.1 - [20-10-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau dieser changelog
+^ Anpassung wegen Suchmaschinenfreundliche URLs JA auf gerufener Seite
+^ method=upgrade gesetzt

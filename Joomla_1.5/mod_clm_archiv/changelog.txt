@@ -1,0 +1,18 @@
+﻿CHANGELOG mod_clm_archiv ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.0.1 - [19-10-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau changelog
+# störendes Aufreißen des Modulmenüs verhindert durch URL-Test 
+^ method="upgrade" gesetzt
+

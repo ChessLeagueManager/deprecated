@@ -1,0 +1,19 @@
+﻿CHANGELOG mod_clm_minitab ab 1.0.0
+------------
+
+Legend:
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+% -> Performance Fix
+- -> Removed
+! -> Note
+
+- - - - - 1.0.2 - [18-10-2012] - - - - - - - - - - - - - - - - - - - -
+^ method="upgrade" gesetzt
+
+- - - - - 1.0.1 - [25-09-2012] - - - - - - - - - - - - - - - - - - - -
++ Einbau changelog
+# css für eventuelle Aufsteiger

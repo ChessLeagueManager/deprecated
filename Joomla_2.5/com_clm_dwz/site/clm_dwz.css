@@ -1,0 +1,19 @@
+/*************************************/
+/** Darstellung bei der DWZ Ansicht **/
+/*************************************/
+
+#dwz { }
+#dwz .clmbox { width:99% !important; float: none !important; padding: 5px 5px 5px 0; height: 20px; }
+#dwz .clmbox a {line-height: 20px;}
+#dwz span.right { float: right;}
+#dwz .selectteam { padding: 2px 3px; font-size: 12px; }
+
+#dwz .dwz_1 { width: 15px; text-align: center; } /** Brettnummer **/
+#dwz .dwz_2 { width: 30px; text-align: center; } /** Mitgliedsnummer **/
+#dwz .dwz_3 { width: 30px; text-align: center; } /** Status **/
+#dwz .dwz_4 { text-align: left; } /** Name **/
+#dwz .dwz_5 { width: 30px;text-align: center; } /** Geschlecht **/
+#dwz .dwz_6 { width: 60px; text-align: left; } /** DWZ **/
+#dwz .dwz_7 { width: 40px; text-align: center; } /** ELO **/
+#dwz .dwz_8 { width: 30px; text-align: center; } /** Titel **/
+#dwz table td div { } /** Hier kann eine individuelle Anpassung der Zellen vorgenommen werden **/

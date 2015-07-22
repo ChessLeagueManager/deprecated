@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<config>
+
+		<params group="basics">
+			<param name="zps" type="text" default="22059" label="PARAM_ZPS" description="PARAM_ZPS_DESC" size="5"/>
+			
+			<param name="formatname" type="list" default="0" label="PARAM_FORMATNAME" description="PARAM_FORMATNAME_DESC">
+				<option value="0">PARAM_FORMATNAME_0</option>
+				<option value="1">PARAM_FORMATNAME_1</option>
+				<option value="2">PARAM_FORMATNAME_2</option>
+			</param>
+			
+			<param name="classtable" type="text" default="" label="PARAM_CSSCLASS_TABLE" description="PARAM_CSSCLASS_TABLE_DESC" size="25"/>
+			<param name="classrow1" type="text" default="" label="PARAM_CSSCLASS_ROW1" description="PARAM_CSSCLASS_ROW1_DESC" size="25"/>
+			<param name="classrow2" type="text" default="" label="PARAM_CSSCLASS_ROW2" description="PARAM_CSSCLASS_ROW2_DESC" size="25"/>
+			
+			<param name="showlinkdsb" type="radio" default="1" label="PARAM_LINKDSB" description="PARAM_LINKDSB_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+		</params>
+			
+		<params group="list">
+			<param name="listheading" type="text" default="DWZ-Liste vom {datum}" label="PARAM_PLAYERLISTHEADER" description="PARAM_PLAYERLISTHEADER_DESC" size="50" />
+			
+			<param name="offercolorder" type="radio" default="0" label="PARAM_COLORDER" description="PARAM_COLORDER_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showrank" type="radio" default="1" label="PARAM_COL_NUMBER" description="PARAM_COL_NUMBER_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			<param name="showtitle" type="radio" default="1" label="PARAM_COL_TITLE" description="PARAM_COL_TITLE_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showbirthyear" type="radio" default="0" label="PARAM_COL_BIRTHYEAR" description="PARAM_COL_BIRTHYEAR_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showsex" type="radio" default="2" label="PARAM_COL_SEX" description="PARAM_COL_SEX_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+				<option value="2">PARAM_COL_SEX_2</option>
+			</param>
+			
+			<param name="showevaluation" type="radio" default="1" label="PARAM_COL_EVALUATION" description="PARAM_COL_EVALUATION_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showelo" type="radio" default="1" label="PARAM_COL_ELO" description="PARAM_COL_ELO_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showstatus" type="radio" default="1" label="PARAM_COL_STATUS" description="PARAM_COL_STATUS_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+		</params>
+			
+		<params group="player">
+			<param name="playerheading" type="text" default="DWZ-Information über {name}, aktuell vom {datum}" label="PARAM_PLAYERINFOHEADER" description="PARAM_PLAYERINFOHEADER_DESC" size="50" />
+			
+			<param name="showrowname" type="radio" default="1" label="PARAM_ROW_NAME" description="PARAM_ROW_NAME_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showrowelo" type="radio" default="1" label="PARAM_ROW_ELO" description="PARAM_ROW_ELO_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showentrynum" type="radio" default="1" label="PARAM_COL_ENTRY" description="PARAM_COL_ENTRY_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showexpect" type="radio" default="1" label="PARAM_COL_EXCEPT" description="PARAM_COL_EXCEPT_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="showopponent" type="radio" default="1" label="PARAM_COL_OPPONENT" description="PARAM_COL_OPPONENT_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+		</params>
+		
+		<params group="stats">
+			<param name="statsheading" type="text" default="DWZ-Statistiken vom {datum}" label="PARAM_STATSHEADER" description="PARAM_STATSHEADER_DESC" size="50" />
+			
+			<param name="includestatusp" type="radio" default="0" label="PARAM_INCLUDESTATUSP" description="PARAM_INCLUDESTATUSP_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+			
+			<param name="statstopintervals" type="text" default="8,20" label="PARAM_STATSTOPINTERVALS" description="PARAM_STATSTOPINTERVALS_DESC" size="25" />
+		
+			<param name="showstatselo" type="radio" default="1" label="PARAM_STATSELO" description="PARAM_STATSELO_DESC">
+				<option value="0">NO</option>
+				<option value="1">YES</option>
+			</param>
+		
+		</params>
+	</config>

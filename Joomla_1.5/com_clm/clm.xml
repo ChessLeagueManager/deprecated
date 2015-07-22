@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+	<name>clm</name>
+	<creationDate>01.05.2013</creationDate>
+	<author>CLM Projekt</author>
+	<copyright>(C) Copyright 2008-2013 by CLM Projekt</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>fishpoke@fishpoke.de</authorEmail>
+	<authorUrl>www.chessleaguemanager.de</authorUrl>
+	<version>1.3.0 J1.5</version>
+	<description>
+		<![CDATA[
+	 	<img src="components/com_clm/images/clm_logo.png" alt="" align="left" />
+		 <h3>CLM - Chess League Manager :</h3>
+		 <p>Die CLM Komponente ist ein Ligamanager für Schachligen.</p>
+		 <a href="http://www.chessleaguemanager.de" target="blank">CLM Projekt Homepage</a>  |  <a href="http://www.chessleaguemanager.de/index.php?option=com_kunena" target="blank">Support Forum</a>
+		 <br><br>
+		 <u>CLM Team :</u>
+		 <ul type="square">
+		 <li>Thorsten Ahlers, Support Forum &amp; Homepage</li>
+		 <li>Klaus Bärthel, PDF Viewer, Mannschaftsturniere</li>
+		 <li>Andreas Dorn, DWZ Auswertung &amp; ELO Base Export</li>
+		 <li>Helge Frowein, Einzelturniermodus</li>
+		 <li>Daniel Mohr, Support Forum &amp; Homepage</li>
+		 <li>Fjodor Schäfer, Design CLM &amp; Projektseite</li>
+		 <li>Thomas Schwietert, Projektgründer</li>
+		 ]]>
+	</description>
+	
+	<uninstallfile>uninstall.clm.php</uninstallfile>
+	<installfile>install.clm.php</installfile>
+	
+	<files folder="site">
+		<filename>clm.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+
+		<filename>classes/CLMCategoryTree.class.php</filename>
+		<filename>classes/CLMContent.class.php</filename>
+		<filename>classes/CLMImage.class.php</filename>
+		<filename>classes/CLMText.class.php</filename>
+		<filename>classes/CLMcLink.class.php</filename>
+
+		<filename>images/index.html</filename>
+		<filename>images/accept.png</filename>
+		<filename>images/cancel_f2.png</filename>
+		<filename>images/clm_logo.png</filename>
+		<filename>images/con_info.png</filename>
+		<filename>images/edit_f2.png</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/lupe.png</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/pgn.gif</filename>
+		<filename>images/pgnviewer/zurich/bBishop.gif</filename>
+		<filename>images/pgnviewer/zurich/bKing.gif</filename>
+		<filename>images/pgnviewer/zurich/bKnight.gif</filename>
+		<filename>images/pgnviewer/zurich/bPawn.gif</filename>
+		<filename>images/pgnviewer/zurich/bQueen.gif</filename>
+		<filename>images/pgnviewer/zurich/bRook.gif</filename>
+		<filename>images/pgnviewer/zurich/wBishop.gif</filename>
+		<filename>images/pgnviewer/zurich/wKing.gif</filename>
+		<filename>images/pgnviewer/zurich/wKnight.gif</filename>
+		<filename>images/pgnviewer/zurich/wPawn.gif</filename>
+		<filename>images/pgnviewer/zurich/wQueen.gif</filename>
+		<filename>images/pgnviewer/zurich/wRook.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/back.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/comments.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/ffward.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/flip.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/forward.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/rwind.gif</filename>
+		<filename>images/pgnviewer/zurich/buttons/toggle.gif</filename>
+		<filename>images/pgnviewer/zurich/board/darksquare.gif</filename>
+		<filename>images/pgnviewer/zurich/board/lightsquare.gif</filename>
+		<filename>images/pgnviewer/zurich/readme.txt</filename>
+		<filename>images/pgnviewer/kent/bBishop.gif</filename>
+		<filename>images/pgnviewer/kent/bKing.gif</filename>
+		<filename>images/pgnviewer/kent/bKnight.gif</filename>
+		<filename>images/pgnviewer/kent/bPawn.gif</filename>
+		<filename>images/pgnviewer/kent/bQueen.gif</filename>
+		<filename>images/pgnviewer/kent/bRook.gif</filename>
+		<filename>images/pgnviewer/kent/wBishop.gif</filename>
+		<filename>images/pgnviewer/kent/wKing.gif</filename>
+		<filename>images/pgnviewer/kent/wKnight.gif</filename>
+		<filename>images/pgnviewer/kent/wPawn.gif</filename>
+		<filename>images/pgnviewer/kent/wQueen.gif</filename>
+		<filename>images/pgnviewer/kent/wRook.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/back.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/comments.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/ffward.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/flip.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/forward.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/rwind.gif</filename>
+		<filename>images/pgnviewer/kent/buttons/toggle.gif</filename>
+		<filename>images/pgnviewer/png/bBishop.png</filename>
+		<filename>images/pgnviewer/png/bKing.png</filename>
+		<filename>images/pgnviewer/png/bKnight.png</filename>
+		<filename>images/pgnviewer/png/bPawn.png</filename>
+		<filename>images/pgnviewer/png/bQueen.png</filename>
+		<filename>images/pgnviewer/png/bRook.png</filename>
+		<filename>images/pgnviewer/png/wBishop.png</filename>
+		<filename>images/pgnviewer/png/wKing.png</filename>
+		<filename>images/pgnviewer/png/wKnight.png</filename>
+		<filename>images/pgnviewer/png/wPawn.png</filename>
+		<filename>images/pgnviewer/png/wQueen.png</filename>
+		<filename>images/pgnviewer/png/wRook.png</filename>
+		<filename>images/pgnviewer/png/bBishop.gif</filename>
+		<filename>images/pgnviewer/png/bKing.gif</filename>
+		<filename>images/pgnviewer/png/bKnight.gif</filename>
+		<filename>images/pgnviewer/png/bPawn.gif</filename>
+		<filename>images/pgnviewer/png/bQueen.gif</filename>
+		<filename>images/pgnviewer/png/bRook.gif</filename>
+		<filename>images/pgnviewer/png/wBishop.gif</filename>
+		<filename>images/pgnviewer/png/wKing.gif</filename>
+		<filename>images/pgnviewer/png/wKnight.gif</filename>
+		<filename>images/pgnviewer/png/wPawn.gif</filename>
+		<filename>images/pgnviewer/png/wQueen.gif</filename>
+		<filename>images/pgnviewer/png/wRook.gif</filename>
+		<filename>images/pgnviewer/png/buttons/back.png</filename>
+		<filename>images/pgnviewer/png/buttons/comments.png</filename>
+		<filename>images/pgnviewer/png/buttons/ffward.png</filename>
+		<filename>images/pgnviewer/png/buttons/flip.png</filename>
+		<filename>images/pgnviewer/png/buttons/forward.png</filename>
+		<filename>images/pgnviewer/png/buttons/rwind.png</filename>
+		<filename>images/pgnviewer/png/buttons/toggle.png</filename>
+		<filename>images/pgnviewer/png/buttons/back.gif</filename>
+		<filename>images/pgnviewer/png/buttons/comments.gif</filename>
+		<filename>images/pgnviewer/png/buttons/ffward.gif</filename>
+		<filename>images/pgnviewer/png/buttons/flip.gif</filename>
+		<filename>images/pgnviewer/png/buttons/forward.gif</filename>
+		<filename>images/pgnviewer/png/buttons/rwind.gif</filename>
+		<filename>images/pgnviewer/png/buttons/toggle.gif</filename>
+		<filename>images/pgnviewer/png/readme.txt</filename>
+		<filename>images/pgnviewer/default/bBishop.gif</filename>
+		<filename>images/pgnviewer/default/bKing.gif</filename>
+		<filename>images/pgnviewer/default/bKnight.gif</filename>
+		<filename>images/pgnviewer/default/bPawn.gif</filename>
+		<filename>images/pgnviewer/default/bQueen.gif</filename>
+		<filename>images/pgnviewer/default/bRook.gif</filename>
+		<filename>images/pgnviewer/default/wBishop.gif</filename>
+		<filename>images/pgnviewer/default/wKing.gif</filename>
+		<filename>images/pgnviewer/default/wKnight.gif</filename>
+		<filename>images/pgnviewer/default/wPawn.gif</filename>
+		<filename>images/pgnviewer/default/wQueen.gif</filename>
+		<filename>images/pgnviewer/default/wRook.gif</filename>
+		<filename>images/pgnviewer/default/buttons/back.gif</filename>
+		<filename>images/pgnviewer/default/buttons/comments.gif</filename>
+		<filename>images/pgnviewer/default/buttons/ffward.gif</filename>
+		<filename>images/pgnviewer/default/buttons/flip.gif</filename>
+		<filename>images/pgnviewer/default/buttons/forward.gif</filename>
+		<filename>images/pgnviewer/default/buttons/rwind.gif</filename>
+		<filename>images/pgnviewer/default/buttons/toggle.gif</filename>
+		<filename>images/pgnviewer/default/buttons/back.png</filename>
+		<filename>images/pgnviewer/default/buttons/comments.png</filename>
+		<filename>images/pgnviewer/default/buttons/ffward.png</filename>
+		<filename>images/pgnviewer/default/buttons/flip.png</filename>
+		<filename>images/pgnviewer/default/buttons/forward.png</filename>
+		<filename>images/pgnviewer/default/buttons/rwind.png</filename>
+		<filename>images/pgnviewer/default/buttons/toggle.png</filename>
+
+
+		<filename>includes/clm_content.css</filename>
+		<filename>includes/copy.php</filename>
+		<filename>includes/css_path.php</filename>
+		<filename>includes/fpdf.php</filename>
+		<filename>includes/fpdf.css</filename>
+		<filename>includes/googlemaps.php</filename>
+		<filename>includes/image_path.php</filename>
+		<filename>includes/index.html</filename>
+		<filename>includes/pdf_footer.php</filename>
+		<filename>includes/pdf_header.php</filename>
+		<filename>includes/rotation.php</filename>
+		<filename>includes/submenu.php</filename>
+		<filename>includes/submenu_t.php</filename>
+
+		<filename>includes/font/index.html</filename>
+		<filename>includes/font/courier.php</filename>
+		<filename>includes/font/desktop.ini</filename>
+		<filename>includes/font/helveticabi.php</filename>
+		<filename>includes/font/helveticab.php</filename>
+		<filename>includes/font/helveticai.php</filename>
+		<filename>includes/font/helvetica.php</filename>
+		<filename>includes/font/symbol.php</filename>
+		<filename>includes/font/timesbi.php</filename>
+		<filename>includes/font/timesb.php</filename>
+		<filename>includes/font/timesi.php</filename>
+		<filename>includes/font/times.php</filename>
+		<filename>includes/font/zapfdingbats.php</filename>
+		<filename>includes/font/makefont/index.html</filename>
+		<filename>includes/font/makefont/cp1250.map</filename>
+		<filename>includes/font/makefont/cp1251.map</filename>
+		<filename>includes/font/makefont/cp1252.map</filename>
+		<filename>includes/font/makefont/cp1253.map</filename>
+		<filename>includes/font/makefont/cp1254.map</filename>
+		<filename>includes/font/makefont/cp1255.map</filename>
+		<filename>includes/font/makefont/cp1257.map</filename>
+		<filename>includes/font/makefont/cp1258.map</filename>
+		<filename>includes/font/makefont/cp874.map</filename>
+		<filename>includes/font/makefont/iso-8859-11.map</filename>
+		<filename>includes/font/makefont/iso-8859-15.map</filename>
+		<filename>includes/font/makefont/iso-8859-16.map</filename>
+		<filename>includes/font/makefont/iso-8859-1.map</filename>
+		<filename>includes/font/makefont/iso-8859-2.map</filename>
+		<filename>includes/font/makefont/iso-8859-4.map</filename>
+		<filename>includes/font/makefont/iso-8859-5.map</filename>
+		<filename>includes/font/makefont/iso-8859-7.map</filename>
+		<filename>includes/font/makefont/iso-8859-9.map</filename>
+		<filename>includes/font/makefont/koi8-r.map</filename>
+		<filename>includes/font/makefont/koi8-u.map</filename>
+		<filename>includes/font/makefont/makefont.php</filename>
+
+		<filename>javascript/jsPgnViewer.js</filename>
+		<filename>javascript/showPgnViewer.js</filename>
+		<filename>javascript/updateTableHeaders.js</filename>
+		<filename>javascript/suckerfish.js</filename>
+
+		<filename>models/aktuell_runde.php</filename>
+		<filename>models/dwz_liga.php</filename>
+		<filename>models/dwz.php</filename>
+		<filename>models/info.php</filename>
+		<filename>models/mannschaft.php</filename>
+		<filename>models/meldeliste.php</filename>
+		<filename>models/meldung.php</filename>
+		<filename>models/paarungsliste.php</filename>
+		<filename>models/quickmenu.php</filename>
+		<filename>models/quickmenu_t.php</filename>
+		<filename>models/rangliste.php</filename>
+		<filename>models/reset.php</filename>
+		<filename>models/runde.php</filename>
+		<filename>models/spieler.php</filename>
+		<filename>models/turnier_info.php</filename>
+		<filename>models/turnier_invitation.php</filename>
+		<filename>models/turnier_paarungsliste.php</filename>
+		<filename>models/turnier_player.php</filename>
+		<filename>models/turnier_rangliste.php</filename>
+		<filename>models/turnier_runde.php</filename>
+		<filename>models/turnier_tabelle.php</filename>
+		<filename>models/turnier_teilnehmer.php</filename>
+		<filename>models/statistik.php</filename>
+		<filename>models/termine.php</filename>
+		<filename>models/verein.php</filename>
+		<filename>models/vereinsliste.php</filename>
+		<filename>models/index.html</filename>
+
+		<filename>views/aktuell_runde/view.html.php</filename>
+		<filename>views/aktuell_runde/view.raw.php</filename>
+		<filename>views/aktuell_runde/index.html</filename>
+		<filename>views/aktuell_runde/tmpl/default.php</filename>
+		<filename>views/aktuell_runde/tmpl/default_raw.php</filename>
+		<filename>views/aktuell_runde/tmpl/index.html</filename>
+
+		<filename>views/dwz/view.html.php</filename>
+		<filename>views/dwz/view.raw.php</filename>
+		<filename>views/dwz/view.clm_pdf.php</filename>
+		<filename>views/dwz/index.html</filename>
+		<filename>views/dwz/tmpl/default.php</filename>
+		<filename>views/dwz/tmpl/default_raw.php</filename>
+		<filename>views/dwz/tmpl/dwz_pdf.php</filename>
+		<filename>views/dwz/tmpl/index.html</filename>
+	
+		<filename>views/dwz_liga/view.html.php</filename>
+		<filename>views/dwz_liga/view.raw.php</filename>
+		<filename>views/dwz_liga/index.html</filename>
+		<filename>views/dwz_liga/tmpl/default.php</filename>
+		<filename>views/dwz_liga/tmpl/default_raw.php</filename>
+		<filename>views/dwz_liga/tmpl/index.html</filename>
+
+		<filename>views/info/view.html.php</filename>
+		<filename>views/info/view.raw.php</filename>
+		<filename>views/info/index.html</filename>
+		<filename>views/info/tmpl/default.php</filename>
+		<filename>views/info/tmpl/default_raw.php</filename>
+		<filename>views/info/tmpl/index.html</filename>
+
+		<filename>views/mannschaft/view.html.php</filename>
+		<filename>views/mannschaft/view.clm_pdf.php</filename>
+		<filename>views/mannschaft/view.raw.php</filename>
+		<filename>views/mannschaft/index.html</filename>
+		<filename>views/mannschaft/tmpl/default.php</filename>
+		<filename>views/mannschaft/tmpl/team_pdf.php</filename>
+		<filename>views/mannschaft/tmpl/default_raw.php</filename>
+		<filename>views/mannschaft/tmpl/index.html</filename>
+
+		<filename>views/meldeliste/view.html.php</filename>
+		<filename>views/meldeliste/index.html</filename>
+		<filename>views/meldeliste/tmpl/default.php</filename>
+		<filename>views/meldeliste/tmpl/rangliste.php</filename>
+		<filename>views/meldeliste/tmpl/sent.php</filename>
+		<filename>views/meldeliste/tmpl/sent_rangliste.php</filename>
+		<filename>views/meldeliste/tmpl/order.php</filename>
+		<filename>views/meldeliste/tmpl/index.html</filename>
+
+		<filename>views/meldung/view.html.php</filename>
+		<filename>views/meldung/index.html</filename>
+		<filename>views/meldung/tmpl/default.php</filename>
+		<filename>views/meldung/tmpl/check.php</filename>
+		<filename>views/meldung/tmpl/sent.php</filename>
+		<filename>views/meldung/tmpl/index.html</filename>
+
+		<filename>views/paarungsliste/view.html.php</filename>
+		<filename>views/paarungsliste/view.clm_pdf.php</filename>
+		<filename>views/paarungsliste/view.raw.php</filename>
+		<filename>views/paarungsliste/index.html</filename>
+		<filename>views/paarungsliste/tmpl/default.php</filename>
+		<filename>views/paarungsliste/tmpl/paar_pdf.php</filename>
+		<filename>views/paarungsliste/tmpl/default_raw.php</filename>
+		<filename>views/paarungsliste/tmpl/index.html</filename>
+
+		<filename>views/rangliste/view.html.php</filename>
+		<filename>views/rangliste/view.clm_pdf.php</filename>
+		<filename>views/rangliste/view.raw.php</filename>
+		<filename>views/rangliste/index.html</filename>
+		<filename>views/rangliste/tmpl/default.php</filename>
+		<filename>views/rangliste/tmpl/rang_pdf.php</filename>
+		<filename>views/rangliste/tmpl/start_pdf.php</filename>
+		<filename>views/rangliste/tmpl/heft_pdf.php</filename>
+		<filename>views/rangliste/tmpl/default_raw.php</filename>
+		<filename>views/rangliste/tmpl/index.html</filename>
+
+		<filename>views/reset/view.html.php</filename>
+		<filename>views/reset/metadata.xml</filename>
+		<filename>views/reset/index.html</filename>
+		<filename>views/reset/tmpl/default.php</filename>
+		<filename>views/reset/tmpl/default.xml</filename>
+		<filename>views/reset/tmpl/complete.php</filename>
+		<filename>views/reset/tmpl/complete.xml</filename>
+		<filename>views/reset/tmpl/confirm.php</filename>
+		<filename>views/reset/tmpl/confirm.xml</filename>
+		<filename>views/reset/tmpl/error.php</filename>
+		<filename>views/reset/tmpl/index.html</filename>
+
+		<filename>views/runde/view.html.php</filename>
+		<filename>views/runde/view.clm_pdf.php</filename>
+		<filename>views/runde/view.raw.php</filename>
+		<filename>views/runde/index.html</filename>
+		<filename>views/runde/tmpl/default.php</filename>
+		<filename>views/runde/tmpl/runde_pdf.php</filename>
+		<filename>views/runde/tmpl/default_raw.php</filename>
+		<filename>views/runde/tmpl/index.html</filename>
+
+		<filename>views/spieler/view.html.php</filename>
+		<filename>views/spieler/view.raw.php</filename>
+		<filename>views/spieler/index.html</filename>
+		<filename>views/spieler/tmpl/default.php</filename>
+		<filename>views/spieler/tmpl/default_raw.php</filename>
+		<filename>views/spieler/tmpl/index.html</filename>
+		
+		<filename>views/statistik/view.html.php</filename>
+		<filename>views/statistik/view.clm_pdf.php</filename>
+		<filename>views/statistik/view.raw.php</filename>
+		<filename>views/statistik/index.html</filename>
+		<filename>views/statistik/tmpl/bestenliste.php</filename>
+		<filename>views/statistik/tmpl/brettbeste_pdf.php</filename>
+		<filename>views/statistik/tmpl/default.php</filename>
+		<filename>views/statistik/tmpl/default_raw.php</filename>
+		<filename>views/statistik/tmpl/index.html</filename>
+
+		<filename>views/termine/view.html.php</filename>
+		<filename>views/termine/view.clm_pdf.php</filename>
+		<filename>views/termine/view.raw.php</filename>
+		<filename>views/termine/index.html</filename>
+		<filename>views/termine/tmpl/default.php</filename>
+		<filename>views/termine/tmpl/termine_long_pdf.php</filename>
+		<filename>views/termine/tmpl/termine_short_pdf.php</filename>
+		<filename>views/termine/tmpl/default_raw.php</filename>
+		<filename>views/termine/tmpl/index.html</filename>
+		<filename>views/termine/tmpl/termine_detail.php</filename>
+		
+		<filename>views/turnier_info/view.html.php</filename>
+		<filename>views/turnier_info/index.html</filename>
+		<filename>views/turnier_info/tmpl/default.php</filename>
+		<filename>views/turnier_info/tmpl/index.html</filename>
+		
+		<filename>views/turnier_invitation/view.html.php</filename>
+		<filename>views/turnier_invitation/index.html</filename>
+		<filename>views/turnier_invitation/tmpl/default.php</filename>
+		<filename>views/turnier_invitation/tmpl/index.html</filename>
+		
+		<filename>views/turnier_paarungsliste/view.html.php</filename>
+		<filename>views/turnier_paarungsliste/view.clm_pdf.php</filename>
+		<filename>views/turnier_paarungsliste/index.html</filename>
+		<filename>views/turnier_paarungsliste/tmpl/default.php</filename>
+		<filename>views/turnier_paarungsliste/tmpl/paarungsliste_pdf.php</filename>
+		<filename>views/turnier_paarungsliste/tmpl/index.html</filename>
+
+		<filename>views/turnier_player/view.html.php</filename>
+		<filename>views/turnier_player/index.html</filename>
+		<filename>views/turnier_player/tmpl/default.php</filename>
+		<filename>views/turnier_player/tmpl/index.html</filename>
+		
+		<filename>views/turnier_rangliste/view.html.php</filename>
+		<filename>views/turnier_rangliste/view.clm_pdf.php</filename>
+		<filename>views/turnier_rangliste/index.html</filename>
+		<filename>views/turnier_rangliste/tmpl/default.php</filename>
+		<filename>views/turnier_rangliste/tmpl/rangliste_pdf.php</filename>
+		<filename>views/turnier_rangliste/tmpl/index.html</filename>
+
+		<filename>views/turnier_runde/view.html.php</filename>
+		<filename>views/turnier_runde/view.clm_pdf.php</filename>
+		<filename>views/turnier_runde/index.html</filename>
+		<filename>views/turnier_runde/tmpl/default.php</filename>
+		<filename>views/turnier_runde/tmpl/runde_pdf.php</filename>
+		<filename>views/turnier_runde/tmpl/index.html</filename>
+		
+		<filename>views/turnier_tabelle/view.html.php</filename>
+		<filename>views/turnier_tabelle/view.clm_pdf.php</filename>
+		<filename>views/turnier_tabelle/index.html</filename>
+		<filename>views/turnier_tabelle/tmpl/default.php</filename>
+		<filename>views/turnier_tabelle/tmpl/tabelle_pdf.php</filename>
+		<filename>views/turnier_tabelle/tmpl/index.html</filename>
+		
+		<filename>views/turnier_teilnehmer/view.html.php</filename>
+		<filename>views/turnier_teilnehmer/view.clm_pdf.php</filename>
+		<filename>views/turnier_teilnehmer/index.html</filename>
+		<filename>views/turnier_teilnehmer/tmpl/default.php</filename>
+		<filename>views/turnier_teilnehmer/tmpl/teilnehmer_pdf.php</filename>
+		<filename>views/turnier_teilnehmer/tmpl/index.html</filename>
+
+		<filename>views/verein/view.html.php</filename>
+		<filename>views/verein/view.raw.php</filename>
+		<filename>views/verein/index.html</filename>
+		<filename>views/verein/tmpl/default.php</filename>
+		<filename>views/verein/tmpl/vereinsdaten.php</filename>
+		<filename>views/verein/tmpl/sent.php</filename>
+		<filename>views/verein/tmpl/default_raw.php</filename>
+		<filename>views/verein/tmpl/index.html</filename>
+
+		<filename>views/vereinsliste/view.html.php</filename>
+		<filename>views/vereinsliste/view.raw.php</filename>
+		<filename>views/vereinsliste/index.html</filename>
+		<filename>views/vereinsliste/tmpl/default.php</filename>
+		<filename>views/vereinsliste/tmpl/default_raw.php</filename>
+		<filename>views/vereinsliste/tmpl/index.html</filename>
+		
+		<filename>views/index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="de-DE">site/languages/de-DE.com_clm.ini</language>
+		<language tag="en-GB">site/languages/en-GB.com_clm.ini</language>
+	</languages>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+			<file driver="mysql">verband.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<menu img="components/com_clm/images/CLM_Logo_mini.png" link="option=com_clm&amp;section=info&amp;">ChessLeagueManager</menu>
+	
+	<files folder="admin">
+		<filename>changelog.txt</filename>
+		<filename>admin.clm.php</filename>
+		<filename>config.xml</filename>
+		<filename>controller.php</filename>
+		<filename>verband.sql</filename>
+		<filename>install.sql</filename>
+		<filename>uninstall.sql</filename>
+		<filename>index.html</filename>
+
+
+		<filename>images/admin_menue_images.php</filename>
+		<filename>images/accept.png</filename>
+		<filename>images/lupe.png</filename>
+		<filename>images/CLM_Logo_mini.png</filename>
+		<filename>images/CLM_Logo_48.png</filename>
+		<filename>images/index.html</filename>
+		
+		<filename>images/clm_icon.css</filename>
+		<filename>images/clm_generic.png</filename>
+		<filename>images/clm_edit.png</filename>
+		<filename>images/clm_settings_2.png</filename>
+		<filename>images/clm_elobase.png</filename>
+		<filename>images/clm_admin_2.png</filename>
+		<filename>images/clm_kopieren.png</filename>
+		<filename>images/clm_settings.png</filename>
+		<filename>images/clm_ordner.png</filename>
+		<filename>images/clm_user.png</filename>
+		<filename>images/clm_logout.png</filename>
+		<filename>images/clm_einstellungen.png</filename>
+		<filename>images/clm_admin.png</filename>
+		<filename>images/clm_speichern.png</filename>
+		<filename>images/clm_info.png</filename>
+		<filename>images/clm_manager.png</filename>
+		<filename>images/clm_txt.png</filename>
+		<filename>images/clm_turnier.png</filename>
+		<filename>images/clm_neu_leer.png</filename>
+		
+		<filename>images/clm_benutzer.png</filename>
+		<filename>images/clm_datenbank.png</filename>
+		<filename>images/clm_elo-base.png</filename>
+		<filename>images/clm_liga_neu.png</filename>
+		<filename>images/clm_liga.png</filename>
+		<filename>images/clm_mturnier_neu.png</filename>
+		<filename>images/clm_mturnier.png</filename>
+		<filename>images/clm_logo.png</filename>
+		<filename>images/clm_logo_bg.png</filename>
+		<filename>images/clm_mannschaften_neu.png</filename>
+		<filename>images/clm_mannschaften.png</filename>
+		<filename>images/clm_mitgliederverwaltung.png</filename>
+		<filename>images/clm_saison_neu.png</filename>
+		<filename>images/clm_saison.png</filename>
+		<filename>images/clm_turniere_neu.png</filename>
+		<filename>images/clm_turniere.png</filename>
+		<filename>images/clm_termine_neu.png</filename>
+		<filename>images/clm_termine.png</filename>
+		<filename>images/clm_verein_neu.png</filename>
+		<filename>images/clm_verein.png</filename>
+		<filename>images/icon-32-export.png</filename>
+		<filename>images/icon-32-download.png</filename>
+		<filename>images/icon-32-refresh.png</filename>
+		<filename>images/icon-32-specialrankings.png</filename>
+		
+		<filename>images/clm_headmenu_benutzer.png</filename>
+		<filename>images/clm_headmenu_datenbank.png</filename>
+		<filename>images/clm_headmenu_liga.png</filename>
+		<filename>images/clm_headmenu_mturnier.png</filename>
+		<filename>images/clm_headmenu_mannschaften.png</filename>
+		<filename>images/clm_headmenu_saison.png</filename>
+		<filename>images/clm_headmenu_sonderranglisten.png</filename>
+		<filename>images/clm_headmenu_einstellungen.png</filename>
+		<filename>images/clm_headmenu_vereine.png</filename>
+		<filename>images/clm_headmenu_elobase.png</filename>
+		<filename>images/clm_headmenu_mitglieder.png</filename>
+		<filename>images/clm_headmenu_manager.png</filename>
+		<filename>images/clm_headmenu_termine.png</filename>
+		
+		<filename>images/colorpicker/close.jpg</filename>
+		<filename>images/colorpicker/crosshairs.png</filename>
+		<filename>images/colorpicker/h.png</filename>
+		<filename>images/colorpicker/position.png</filename>
+		<filename>images/colorpicker/sv.png</filename>
+		<filename>images/colorpicker/colorPicker.css</filename>
+		
+		<filename>javascript/catform.js</filename>
+		<filename>javascript/turform.js</filename>
+		<filename>javascript/turplayeredit.js</filename>
+		<filename>javascript/turroundform.js</filename>
+		<filename>javascript/turroundmatches.js</filename>
+		<filename>javascript/colorPicker.php</filename>
+
+		<filename>upload/index.html</filename>
+		<filename>elobase/index.html</filename>
+		<filename>swt/index.html</filename>
+
+		<filename>classes/AdminLink.class.php</filename>
+		<filename>classes/CLMCategory.class.php</filename>
+		<filename>classes/CLMCategoryTree.class.php</filename>
+		<filename>classes/CLMForm.class.php</filename>
+		<filename>classes/CLMLog.class.php</filename>
+		<filename>classes/CLMText.class.php</filename>
+		<filename>classes/CLMTournament.class.php</filename>
+		<filename>classes/CLMTournamentRound.class.php</filename>
+		<filename>classes/index.html</filename>
+		
+		<filename>controllers/catform.php</filename>
+		<filename>controllers/catmain.php</filename>
+		<filename>controllers/check.php</filename>
+		<filename>controllers/class.dbase.php</filename>
+		<filename>controllers/config.php</filename>
+		<filename>controllers/db.php</filename>
+		<filename>controllers/dwz.php</filename>
+		<filename>controllers/elobase.php</filename>
+		<filename>controllers/ergebnisse.php</filename>
+		<filename>controllers/filter_vereine.php</filename>
+		<filename>controllers/gruppen.php</filename>
+		<filename>controllers/info.php</filename>
+		<filename>controllers/ligen.php</filename>
+		<filename>controllers/logmain.php</filename>
+		<filename>controllers/mannschaften.php</filename>
+		<filename>controllers/meldelisten.php</filename>
+		<filename>controllers/mturniere.php</filename>
+		<filename>controllers/paarung.php</filename>
+		<filename>controllers/ranglisten.php</filename>
+		<filename>controllers/runden.php</filename>
+		<filename>controllers/saisons.php</filename>
+		<filename>controllers/sonderranglistenform.php</filename>
+		<filename>controllers/sonderranglistenmain.php</filename>
+		<filename>controllers/swt.php</filename>
+		<filename>controllers/termineform.php</filename>
+		<filename>controllers/terminemain.php</filename>
+		<filename>controllers/turform.php</filename>
+		<filename>controllers/turinvite.php</filename>
+		<filename>controllers/turmain.php</filename>
+		<filename>controllers/turplayeredit.php</filename>
+		<filename>controllers/turplayerform.php</filename>
+		<filename>controllers/turplayers.php</filename>
+		<filename>controllers/turroundform.php</filename>
+		<filename>controllers/turroundmatches.php</filename>
+		<filename>controllers/turrounds.php</filename>
+		<filename>controllers/users.php</filename>
+		<filename>controllers/vereine.php</filename>
+		<filename>controllers/index.html</filename>
+
+		<filename>models/catform.php</filename>
+		<filename>models/catmain.php</filename>
+		<filename>models/logmain.php</filename>
+		<filename>models/sonderranglistenform.php</filename>
+		<filename>models/sonderranglistenmain.php</filename>
+		<filename>models/termineform.php</filename>
+		<filename>models/terminemain.php</filename>
+		<filename>models/turform.php</filename>
+		<filename>models/turinvite.php</filename>
+		<filename>models/turmain.php</filename>
+		<filename>models/turplayeredit.php</filename>
+		<filename>models/turplayerform.php</filename>
+		<filename>models/turplayers.php</filename>
+		<filename>models/turroundform.php</filename>
+		<filename>models/turroundmatches.php</filename>
+		<filename>models/turrounds.php</filename>
+		<filename>models/index.html</filename>
+		
+		<filename>tables/acl_aro.php</filename>
+		<filename>tables/categories.php</filename>
+		<filename>tables/core_aro.php</filename>
+		<filename>tables/ergebnisse.php</filename>
+		<filename>tables/gruppen.php</filename>
+		<filename>tables/jos_users.php</filename>
+		<filename>tables/ligen.php</filename>
+		<filename>tables/mannschaften.php</filename>
+		<filename>tables/meldelisten.php</filename>
+		<filename>tables/ranglisten.php</filename>
+		<filename>tables/ranggruppe.php</filename>
+		<filename>tables/rangspieler.php</filename>
+		<filename>tables/rnd_man.php</filename>
+		<filename>tables/rnd_spl.php</filename>
+		<filename>tables/runden.php</filename>
+		<filename>tables/saisons.php</filename>
+		<filename>tables/sonderranglistenform.php</filename>
+		<filename>tables/termine.php</filename>
+		<filename>tables/turniere.php</filename>
+		<filename>tables/turnier_ergebnisse.php</filename>
+		<filename>tables/turnier_runden.php</filename>
+		<filename>tables/turnier_teilnehmer.php</filename>
+		<filename>tables/turplayeredit.php</filename>
+		<filename>tables/users.php</filename>
+		<filename>tables/vereine.php</filename>
+		<filename>tables/index.html</filename>
+
+		<filename>views/check.php</filename>
+		<filename>views/db.php</filename>
+		<filename>views/dwz.php</filename>
+		<filename>views/elobase.php</filename>
+		<filename>views/ergebnisse.php</filename>
+		<filename>views/gruppen.php</filename>
+		<filename>views/info.php</filename>
+		<filename>views/ligen.php</filename>
+		<filename>views/mannschaft.php</filename>
+		<filename>views/meldelisten.php</filename>
+		<filename>views/mturniere.php</filename>
+		<filename>views/paarung.php</filename>
+		<filename>views/ranglisten.php</filename>
+		<filename>views/runden.php</filename>
+		<filename>views/saisons.php</filename>
+		<filename>views/swt.php</filename>
+		<filename>views/users.php</filename>
+		<filename>views/vereine.php</filename>
+		<filename>views/index.html</filename>
+	
+		<filename>views/catform/view.html.php</filename>
+		<filename>views/catform/index.html</filename>
+		<filename>views/catform/tmpl/default.php</filename>
+		<filename>views/catform/tmpl/index.html</filename>
+		
+		<filename>views/catmain/view.html.php</filename>
+		<filename>views/catmain/index.html</filename>
+		<filename>views/catmain/tmpl/default.php</filename>
+		<filename>views/catmain/tmpl/index.html</filename>
+		
+		<filename>views/config/view.html.php</filename>
+		<filename>views/config/index.html</filename>
+		<filename>views/config/tmpl/config_basics.php</filename>
+		<filename>views/config/tmpl/config_frontend.php</filename>
+		<filename>views/config/tmpl/config_template.php</filename>
+		<filename>views/config/tmpl/config_turnier.php</filename>
+		<filename>views/config/tmpl/config_upgrade.php</filename>
+		<filename>views/config/tmpl/default.php</filename>
+		<filename>views/config/tmpl/index.html</filename>
+		
+		<filename>views/logmain/view.html.php</filename>
+		<filename>views/logmain/index.html</filename>
+		<filename>views/logmain/tmpl/default.php</filename>
+		<filename>views/logmain/tmpl/index.html</filename>
+		
+		<filename>views/sonderranglistenform/view.html.php</filename>
+		<filename>views/sonderranglistenform/index.html</filename>
+		<filename>views/sonderranglistenform/tmpl/form.php</filename>
+		<filename>views/sonderranglistenform/tmpl/index.html</filename>
+		
+		<filename>views/sonderranglistenmain/view.html.php</filename>
+		<filename>views/sonderranglistenmain/index.html</filename>
+		<filename>views/sonderranglistenmain/tmpl/default.php</filename>
+		<filename>views/sonderranglistenmain/tmpl/index.html</filename>
+		
+		<filename>views/termineform/view.html.php</filename>
+		<filename>views/termineform/index.html</filename>
+		<filename>views/termineform/tmpl/default.php</filename>
+		<filename>views/termineform/tmpl/index.html</filename>
+		
+		<filename>views/terminemain/view.html.php</filename>
+		<filename>views/terminemain/index.html</filename>
+		<filename>views/terminemain/tmpl/default.php</filename>
+		<filename>views/terminemain/tmpl/index.html</filename>
+		
+		<filename>views/turform/view.html.php</filename>
+		<filename>views/turform/index.html</filename>
+		<filename>views/turform/tmpl/default.php</filename>
+		<filename>views/turform/tmpl/index.html</filename>
+	
+		<filename>views/turinvite/view.html.php</filename>
+		<filename>views/turinvite/index.html</filename>
+		<filename>views/turinvite/tmpl/default.php</filename>
+		<filename>views/turinvite/tmpl/index.html</filename>
+	
+		<filename>views/turmain/view.html.php</filename>
+		<filename>views/turmain/index.html</filename>
+		<filename>views/turmain/tmpl/default.php</filename>
+		<filename>views/turmain/tmpl/index.html</filename>
+		
+		<filename>views/turplayeredit/view.html.php</filename>
+		<filename>views/turplayeredit/index.html</filename>
+		<filename>views/turplayeredit/tmpl/default.php</filename>
+		<filename>views/turplayeredit/tmpl/index.html</filename>
+		
+		<filename>views/turplayerform/view.html.php</filename>
+		<filename>views/turplayerform/index.html</filename>
+		<filename>views/turplayerform/tmpl/default.php</filename>
+		<filename>views/turplayerform/tmpl/index.html</filename>
+	
+		<filename>views/turplayers/view.html.php</filename>
+		<filename>views/turplayers/index.html</filename>
+		<filename>views/turplayers/tmpl/default.php</filename>
+		<filename>views/turplayers/tmpl/index.html</filename>
+	
+		<filename>views/turroundform/view.html.php</filename>
+		<filename>views/turroundform/index.html</filename>
+		<filename>views/turroundform/tmpl/default.php</filename>
+		<filename>views/turroundform/tmpl/index.html</filename>
+	
+		<filename>views/turroundmatches/view.html.php</filename>
+		<filename>views/turroundmatches/index.html</filename>
+		<filename>views/turroundmatches/tmpl/default.php</filename>
+		<filename>views/turroundmatches/tmpl/index.html</filename>
+	
+		<filename>views/turrounds/view.html.php</filename>
+		<filename>views/turrounds/index.html</filename>
+		<filename>views/turrounds/tmpl/default.php</filename>
+		<filename>views/turrounds/tmpl/index.html</filename>
+	
+	</files>
+	
+	<languages>
+		<language tag="de-DE">admin/languages/de-DE.com_clm.ini</language>
+		<language tag="de-DE">admin/languages/de-DE.com_clm.config.ini</language>
+		<language tag="de-DE">admin/languages/de-DE.com_clm.turnier.ini</language>
+		<language tag="en-GB">admin/languages/en-GB.com_clm.ini</language>
+		<language tag="en-GB">admin/languages/en-GB.com_clm.config.ini</language>
+		<language tag="en-GB">admin/languages/en-GB.com_clm.turnier.ini</language>
+	</languages>
+
+	</administration>
+	<params />
+</install>
